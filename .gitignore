@@ -1,0 +1,11 @@
+target
+ext/Makefile
+ext/configure
+ext/build
+ext/autom4te.cache
+ext/.libs
+ext/.deps
+*.la
+*.lo
+.vscode
+ext/modules

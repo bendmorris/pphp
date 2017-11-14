@@ -1,0 +1,7 @@
+ARG_ENABLE('pphp', 'pphp support', 'no');
+
+if (PHP_PPHP != 'no') {
+	AC_DEFINE('HAVE_PPHP', 1, 'pphp support enabled');
+
+	EXTENSION('pphp', 'pphp.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}

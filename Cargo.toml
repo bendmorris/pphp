@@ -1,0 +1,19 @@
+[package]
+name = "pphp"
+version = "0.1.0"
+authors = ["Ben Morris <bmorris@mz.com>"]
+build = "build.rs"
+
+[lib]
+name = "pphp"
+crate-type = ["staticlib"]
+
+[dependencies]
+libc = "*"
+libloading = "0.4.2"
+lazy_static = "0.2"
+log = "0.3"
+
+[build-dependencies]
+bindgen = "0.29"
+cc = "1.0"
